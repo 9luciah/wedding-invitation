@@ -4,6 +4,7 @@ import { GlobalStyle } from '../styles/globalStyle';
 import NameSection from '../components/NameSection';
 import TextContentSection from '../components/TextContentSection';
 import GallerySection from '../components/GallerySection';
+import MapSection from '../components/MapSection';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <NameSection />
       <TextContentSection />
       <GallerySection />
+      <MapSection />
     </Container>
   );
 }

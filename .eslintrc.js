@@ -70,6 +70,8 @@ module.exports = {
     'jsx-a11y/no-noninteractive-element-interactions': 0,
     // Bypass Error: Unknown property 'jsx' found  react/no-unknown-property
     'react/no-unknown-property': ['error', { ignore: ['jsx', 'global'] }],
+    // Bypass Error: Unexpected any. Specify a different type
+    "@typescript-eslint/no-explicit-any": "off"
   },
   settings: {
     'import/resolver': {
