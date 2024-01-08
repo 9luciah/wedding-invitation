@@ -68,6 +68,8 @@ module.exports = {
     'import/no-extraneous-dependencies': 0,
     'no-shadow': 0,
     'jsx-a11y/no-noninteractive-element-interactions': 0,
+    // Bypass Error: Unknown property 'jsx' found  react/no-unknown-property
+    'react/no-unknown-property': ['error', { ignore: ['jsx', 'global'] }],
   },
   settings: {
     'import/resolver': {
