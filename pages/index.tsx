@@ -6,6 +6,7 @@ import NameSection from '../components/NameSection';
 import TextContentSection from '../components/TextContentSection';
 import GallerySection from '../components/GallerySection';
 import MapSection from '../components/MapSection';
+import NavigationSection from '../components/NavigationSection';
 import Calendar from '../components/Calendar';
 
 export default function Home() {
@@ -24,6 +25,9 @@ export default function Home() {
         <div>
           <MapSection />
         </div>
+        <NaviContainer>
+          <NavigationSection />
+        </NaviContainer>
         <div>
           <Calendar />
         </div>
@@ -88,4 +92,61 @@ const Image = styled.img`
   width: calc(100% - 48px);
   height: auto;
   padding: 0 24px;
+`;
+
+const NaviContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  -webkit-text-stroke: 0.2px;
+
+  ul {
+    width: 100%;
+    list-style: none;
+    list-style-image: none;
+    box-sizing: border-box;
+    padding: 0px 33px;
+  }
+
+  ul > li {
+    display: flex;
+    font-size: 14.2px;
+  }
+
+  ul > li > a {
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 13.1px;
+    display: flex;
+    align-items: center;
+    margin: 0 3px;
+    border: 1px solid #eaeaea;
+    width: 33.333%;
+    background: #fff;
+    height: 40px;
+    border-radius: 8px;
+    color: #222;
+    text-decoration: none;
+  }
+
+  ul > li > a > div {
+    width: 100%;
+  }
+
+  ul > li > a > div > img {
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+    margin-bottom: -4px;
+  }
+
+  ul > li > a > div > span {
+    font-weight: 500;
+    color: #000;
+    position: relative;
+    font-size: 13px;
+  }
 `;
