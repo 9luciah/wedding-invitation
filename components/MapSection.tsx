@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import styled from 'styled-components';
 import PinkTitle from './PinkTitle';
 
 declare global {
@@ -33,11 +34,15 @@ function MapSection() {
   }, []);
 
   return (
-    <>
+    <Container>
       <PinkTitle smallText={'LOCATION'} largeText={'오시는 길'} />
-      <div id="map" style={{ width: '500px', height: '500px' }} />
-    </>
+      <div id={'map'} style={{ width: '425px', height: '300px' }} />
+    </Container>
   );
 }
 
 export default MapSection;
+
+const Container = styled.div`
+  width: 100%;
+`;

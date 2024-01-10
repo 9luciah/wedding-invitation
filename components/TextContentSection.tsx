@@ -42,8 +42,8 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 100%;
   margin-bottom: 110px;
-  font-family: 'GowunDodum';
   -webkit-text-stroke: 0.2px;
 `;
 

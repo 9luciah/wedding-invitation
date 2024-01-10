@@ -19,7 +19,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-family: 'GowunDodum';
+  width: 100%;
   -webkit-text-stroke: 0.2px;
 `;
 

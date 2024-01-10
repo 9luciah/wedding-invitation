@@ -12,11 +12,12 @@ export default function GallerySection() {
   );
 }
 
-const Container = styled.div`
+const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   -webkit-text-stroke: 0.2px;
   width: 100%;
+  max-height: 946px;
 `;

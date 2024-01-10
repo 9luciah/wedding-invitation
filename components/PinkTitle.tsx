@@ -16,6 +16,8 @@ export default function PinkTitle({ smallText, largeText }: Props) {
 }
 
 const Container = styled.div`
+  width: 100%;
+
   color: #f79e9e;
   font-family: 'GowunDodum';
 
@@ -25,7 +27,7 @@ const Container = styled.div`
     line-height: 20px;
     opacity: 0.6;
     -webkit-text-stroke: 0 !important;
-    font-family: 'Crimson Pro';
+    font-family: 'CrimsonPro';
   }
   :last-of-type {
     font-size: 19.6px;

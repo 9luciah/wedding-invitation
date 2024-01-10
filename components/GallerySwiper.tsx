@@ -12,22 +12,30 @@ export default function GallerySwiper() {
   const imageUrls = ['/images/wiz1.jpeg', '/images/wiz2.jpeg', '/images/wiz3.jpeg'];
 
   return (
-    <Container>
-      <Swiper pagination={{ clickable: true, dynamicMainBullets: 3 }} modules={[Pagination]} loop>
-        {React.Children.toArray(
-          imageUrls.map((imageUrl) => (
-            <SwiperSlide>
-              <Image alt={imageUrl} src={imageUrl} />
-            </SwiperSlide>
-          )),
-        )}
-      </Swiper>
-    </Container>
+    <StyledSwiper
+      pagination={{ clickable: true, dynamicMainBullets: 3 }}
+      modules={[Pagination]}
+      loop
+    >
+      {React.Children.toArray(
+        imageUrls.map((imageUrl) => (
+          <SwiperSlide>
+            <img alt={imageUrl} src={imageUrl} />
+          </SwiperSlide>
+        )),
+      )}
+    </StyledSwiper>
   );
 }
 
-const Container = styled.section`
+const StyledSwiper = styled(Swiper)`
   width: 100%;
+  height: 100%;
+  margin-top: 30px;
+
+  .swiper-slide {
+    width: 100%;
+  }
 
   .swiper-pagination-bullet {
     width: 5.3px;
@@ -56,9 +64,9 @@ const Container = styled.section`
     height: 100px;
     background: white;
   }
-`;
 
-const Image = styled.img`
-  width: 100%;
-  max-height: 755.7px;
+  img {
+    width: 100%;
+    max-height: 756px;
+  }
 `;
