@@ -7,6 +7,7 @@ import TextContentSection from '../components/TextContentSection';
 import GallerySection from '../components/GallerySection';
 import MapSection from '../components/MapSection';
 import NavigationSection from '../components/NavigationSection';
+import ContactSection from '../components/ContactSection';
 import Calendar from '../components/Calendar';
 
 export default function Home() {
@@ -28,6 +29,9 @@ export default function Home() {
         <NaviContainer>
           <NavigationSection />
         </NaviContainer>
+        <ContactContainer>
+          <ContactSection />
+        </ContactContainer>
         <div>
           <Calendar />
         </div>
@@ -148,5 +152,42 @@ const NaviContainer = styled.div`
     color: #000;
     position: relative;
     font-size: 13px;
+  }
+`;
+
+const ContactContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  -webkit-text-stroke: 0.2px;
+
+  ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    list-style-image: none;
+    box-sizing: border-box;
+    padding: 0px 33px;
+  }
+
+  ul > li {
+    text-align: center;
+    font-size: 16px;
+    width: 50%;
+  }
+
+  ul > li > span {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  ul > li > span > a {
+    margin: 5px;
+  }
+
+  ul > li > span > a > img {
+    width: 32px;
   }
 `;
