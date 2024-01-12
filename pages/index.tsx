@@ -9,10 +9,16 @@ import MapSection from '../components/MapSection';
 import NavigationSection from '../components/NavigationSection';
 import ContactSection from '../components/ContactSection';
 import Calendar from '../components/Calendar';
+import KakaoTalkShare from '../components/KakaoTalkShare';
 
 export default function Home() {
   return (
     <Container>
+      <script
+        src="https://t1.kakaocdn.net/kakao_js_sdk/2.6.0/kakao.min.js"
+        integrity="sha384-6MFdIr0zOira1CHQkedUqJVql0YtcZA1P0nbPrQYJXVJZUkTk/oX4U9GhUIs3/z8"
+        crossOrigin="anonymous"
+      />
       <Wrapper>
         <GlobalStyle />
         <TitleWrapper>
@@ -35,6 +41,7 @@ export default function Home() {
         <div>
           <Calendar />
         </div>
+        <KakaoTalkShare />
       </Wrapper>
     </Container>
   );
