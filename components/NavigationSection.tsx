@@ -24,19 +24,26 @@ export default function NavigationSection() {
   ];
 
   return (
-    <ul>
-      <li>
-        {React.Children.toArray(
-          navigationInfos.map((naviInfo) => (
-            <a href={naviInfo.url}>
-              <div>
-                <img alt={naviInfo.img} src={naviInfo.img} />
-                <span>{naviInfo.app}</span>
-              </div>
-            </a>
-          )),
-        )}
-      </li>
-    </ul>
+    <>
+      <div>
+        <span>네비게이션</span>
+        <br />
+        <span>원하시는 앱을 선택하시면 길안내가 시작됩니다.</span>
+      </div>
+      <ul>
+        <li>
+          {React.Children.toArray(
+            navigationInfos.map((naviInfo) => (
+              <a href={naviInfo.url}>
+                <div>
+                  <img alt={naviInfo.img} src={naviInfo.img} />
+                  <span>{naviInfo.app}</span>
+                </div>
+              </a>
+            )),
+          )}
+        </li>
+      </ul>
+    </>
   );
 }

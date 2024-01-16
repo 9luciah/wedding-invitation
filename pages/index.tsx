@@ -11,6 +11,7 @@ import NavigationSection from '../components/NavigationSection';
 import ContactSection from '../components/ContactSection';
 import KakaoTalkShare from '../components/KakaoTalkShare';
 import PinkTitle from '../components/PinkTitle';
+import { Subway, Bus, Car, BusRental } from '../components/PublicTransport';
 
 export default function Home() {
   return (
@@ -105,12 +106,24 @@ export default function Home() {
             </CalendarTable>
           </CalendarWrapper>
         </CalendarContainer>
-        <div>
+        <div style={{ marginTop: '80px' }}>
+          <PinkTitle smallText={'LOCATION'} largeText={'오시는 길'} />
+          <AddressWrapper>
+            <span>더링크호텔 5층 가든홀</span>
+            <span>서울 구로구 경인로 610</span>
+            <span>Tel. 02-852-5000</span>
+          </AddressWrapper>
           <MapSection />
         </div>
         <NaviContainer>
           <NavigationSection />
         </NaviContainer>
+        <PublicTransportContainer>
+          <Subway />
+          <Bus />
+          <Car />
+          <BusRental />
+        </PublicTransportContainer>
         <ContactContainer>
           <PinkTitle smallText={'ACCOUNT'} largeText={'마음 전하실 곳'} />
           <ContactSection />
@@ -181,14 +194,66 @@ const Image = styled.img`
   padding: 0 24px;
 `;
 
+const AddressWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  -webkit-text-stroke: 0.2px;
+
+  span {
+    &:nth-child(1) {
+      padding: 30px 0 10px;
+      font-size: 18.5px;
+    }
+
+    &:nth-child(2) {
+      font-size: 16px;
+      color: #544f4f;
+      letter-spacing: 0;
+      opacity: 0.8;
+      padding: 0 0 20px 0;
+    }
+
+    &:nth-child(3) {
+      font-size: 14.2px;
+      color: #544f4f;
+      letter-spacing: 0;
+      opacity: 0.8;
+    }
+  }
+`;
+
 const NaviContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 100%;
-  margin-bottom: 40px;
+  margin: 20px 0;
   -webkit-text-stroke: 0.2px;
+
+  & > div {
+    width: 100%;
+    text-align: left;
+  }
+
+  & > div > span {
+    padding-left: 36px;
+
+    &:nth-child(1) {
+      color: #49413a;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 3.5;
+    }
+
+    &:nth-child(3) {
+      font-size: 15.2px;
+      color: #585858;
+    }
+  }
 
   ul {
     width: 100%;
@@ -236,6 +301,35 @@ const NaviContainer = styled.div`
     color: #000;
     position: relative;
     font-size: 13px;
+  }
+`;
+
+const PublicTransportContainer = styled.div`
+  margin-bottom: 80px;
+  div {
+    text-align: left;
+    margin: 10px 36px;
+    padding: 30px 0;
+    border-top: 1px solid #eeeeee;
+    -webkit-text-stroke: 0.2px;
+  }
+
+  div > span {
+    &:nth-child(1) {
+      color: #49413a;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    &:nth-child(n + 4) {
+      color: #585858;
+      font-size: 15.2px;
+      line-height: 1.7;
+    }
+
+    &:last-child {
+      line-height: 0;
+    }
   }
 `;
 
