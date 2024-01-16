@@ -10,6 +10,7 @@ import MapSection from '../components/MapSection';
 import NavigationSection from '../components/NavigationSection';
 import ContactSection from '../components/ContactSection';
 import KakaoTalkShare from '../components/KakaoTalkShare';
+import PinkTitle from '../components/PinkTitle';
 
 export default function Home() {
   return (
@@ -111,9 +112,12 @@ export default function Home() {
           <NavigationSection />
         </NaviContainer>
         <ContactContainer>
+          <PinkTitle smallText={'ACCOUNT'} largeText={'마음 전하실 곳'} />
           <ContactSection />
         </ContactContainer>
-        <KakaoTalkShare />
+        <KaKaoTalkShareWrapper>
+          <KakaoTalkShare />
+        </KaKaoTalkShareWrapper>
       </Wrapper>
     </Container>
   );
@@ -183,6 +187,7 @@ const NaviContainer = styled.div`
   align-items: center;
   text-align: center;
   width: 100%;
+  margin-bottom: 40px;
   -webkit-text-stroke: 0.2px;
 
   ul {
@@ -242,6 +247,23 @@ const ContactContainer = styled.div`
   width: 100%;
   -webkit-text-stroke: 0.2px;
 
+  .text {
+    padding: 35px 0;
+    font-size: 15.2px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    color: #585858;
+    line-height: 2;
+  }
+
+  .contactText {
+    font-size: 16px;
+  }
+
+  .parentContactText {
+    font-size: 15.2px;
+  }
+
   ul {
     display: flex;
     width: 100%;
@@ -253,13 +275,12 @@ const ContactContainer = styled.div`
 
   ul > li {
     text-align: center;
-    font-size: 16px;
     width: 50%;
   }
 
   ul > li > span {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   ul > li > span > a {
@@ -337,5 +358,32 @@ const CalendarTable = styled.table`
     color: white;
     background-color: #f79e9e;
     border-radius: 50%;
+  }
+`;
+
+const KaKaoTalkShareWrapper = styled.div`
+  padding: 70px 0 20px 0;
+
+  button {
+    border: none;
+    background: transparent;
+  }
+
+  button > span {
+    font-family: 'GowunDodum';
+    font-size: 15.2px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    color: #585858;
+    line-height: 2;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke: 0.2px;
+  }
+
+  button > img {
+    width: 16px;
+    padding-right: 8px;
+    position: relative;
+    top: 2px;
   }
 `;

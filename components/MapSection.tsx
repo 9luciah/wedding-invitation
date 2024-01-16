@@ -36,7 +36,7 @@ function MapSection() {
   return (
     <Container>
       <PinkTitle smallText={'LOCATION'} largeText={'오시는 길'} />
-      <div id={'map'} style={{ width: '425px', height: '300px' }} />
+      <div id={'map'} style={{ width: '425px', height: '300px', marginTop: '35px' }} />
     </Container>
   );
 }

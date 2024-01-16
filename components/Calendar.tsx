@@ -94,6 +94,7 @@ const TitleSection = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
+
 const TitleDate = styled.span`
   font-size: 21.5px;
   opacity: 0.95;

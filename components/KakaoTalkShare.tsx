@@ -38,7 +38,8 @@ function KakaoTalkShare() {
 
   return (
     <button type="button" onClick={handleShareToKakaoTalk}>
-      카카오톡 공유하기
+      <img alt="/images/ico_kakaotalk_share.png" src="/images/ico_kakaotalk_share.png" />
+      <span>카카오톡으로 초대장 보내기</span>
     </button>
   );
 }
