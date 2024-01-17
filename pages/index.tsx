@@ -12,6 +12,7 @@ import ContactSection from '../components/ContactSection';
 import KakaoTalkShare from '../components/KakaoTalkShare';
 import PinkTitle from '../components/PinkTitle';
 import { Subway, Bus, Car, BusRental } from '../components/PublicTransport';
+import BankAcctNo from '../components/BankAcctNo';
 
 export default function Home() {
   return (
@@ -128,6 +129,15 @@ export default function Home() {
           <PinkTitle smallText={'ACCOUNT'} largeText={'마음 전하실 곳'} />
           <ContactSection />
         </ContactContainer>
+        <BankAcctNo title={'신랑측 계좌번호'} contents={[['농협 111', '강웅비']]} />
+        <BankAcctNo
+          title={'신부측 계좌번호'}
+          contents={[
+            ['국민은행 111', '주가영'],
+            ['농협', '주형복'],
+            ['농협', '박선순'],
+          ]}
+        />
         <KaKaoTalkShareWrapper>
           <KakaoTalkShare />
         </KaKaoTalkShareWrapper>
@@ -339,6 +349,7 @@ const ContactContainer = styled.div`
   align-items: center;
   text-align: center;
   width: 100%;
+  margin-bottom: 60px;
   -webkit-text-stroke: 0.2px;
 
   .text {
