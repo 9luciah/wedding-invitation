@@ -16,6 +16,15 @@ export default function BankAcctNo({ title, contents }: Props) {
     return <img style={style} alt={imgSrc} src={imgSrc} />;
   };
 
+  const handleClickCopy = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      window.alert('클립보드에 링크가 복사되었어요.');
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <div
       style={{
@@ -64,7 +73,8 @@ export default function BankAcctNo({ title, contents }: Props) {
               >
                 <span style={{ marginRight: 'auto' }}>{content[0]}</span>
                 <button
-                  type="button"
+                  type={'button'}
+                  onClick={() => handleClickCopy(content[0])}
                   style={{
                     border: '4px solid #f2f2f2',
                     borderRadius: '4px',
@@ -72,9 +82,10 @@ export default function BankAcctNo({ title, contents }: Props) {
                     fontFamily: 'inherit',
                     fontWeight: 'bold',
                     WebkitTextStroke: '0px',
+                    cursor: 'pointer',
                   }}
                 >
-                  복사하기
+                  {'복사하기\r'}
                 </button>
               </div>
               <span>{content[1]}</span>
