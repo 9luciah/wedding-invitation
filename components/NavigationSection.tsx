@@ -9,7 +9,7 @@ export default function NavigationSection() {
     {
       app: '네이버지도',
       img: '/images/ico_navermap.png',
-      url: `http://app.map.naver.com/launchApp/?version=11&menu=navigation&elat=${lat}elng=${lng}&etitle=${encodedTitle}`,
+      url: `http://app.map.naver.com/launchApp/?version=11&menu=navigation&elat=${lat}&elng=${lng}&etitle=${encodedTitle}`,
     },
     {
       app: '티맵',

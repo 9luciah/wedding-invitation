@@ -16,8 +16,8 @@ function KakaoTalkShare() {
     Kakao.Share.sendDefault({
       objectType: 'feed',
       content: {
-        title: '제목',
-        description: '상세',
+        title: '3월 9일 강웅비 ❤️ 주가영 결혼합니다.',
+        description: '',
         imageUrl: '',
         link: {
           mobileWebUrl: location.href,
@@ -26,10 +26,17 @@ function KakaoTalkShare() {
       },
       buttons: [
         {
-          title: '테스트',
+          title: '모바일청첩장',
           link: {
             mobileWebUrl: location.href,
             webUrl: location.href,
+          },
+        },
+        {
+          title: '위치 보기',
+          link: {
+            mobileWebUrl: 'https://map.naver.com/p/entry/place/1070501110?c=15.00,0,0,0,dh',
+            webUrl: 'https://map.naver.com/p/entry/place/1070501110?c=15.00,0,0,0,dh',
           },
         },
       ],
