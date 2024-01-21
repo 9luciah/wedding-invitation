@@ -18,7 +18,7 @@ function KakaoTalkShare() {
       content: {
         title: '3월 9일 강웅비 ❤️ 주가영 결혼합니다.',
         description: '',
-        imageUrl: '',
+        imageUrl: 'https://main.d2ia4lq1j9ieuf.amplifyapp.com/images/1.jpg',
         link: {
           mobileWebUrl: location.href,
           webUrl: location.href,
