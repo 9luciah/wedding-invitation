@@ -28,7 +28,7 @@ export default function Home() {
           <Title>{'2024 / 03 / 09'}</Title>
           <SubTitle>{'SATURDAY'}</SubTitle>
         </TitleWrapper>
-        <Image src={'/images/wiz3.jpeg'} />
+        <Image src={'/images/1.jpg'} />
         <NameSection />
         <TextContentSection />
         <div>
