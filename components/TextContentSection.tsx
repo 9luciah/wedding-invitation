@@ -7,31 +7,24 @@ export default function TextContentSection() {
     <Container>
       <PinkTitle smallText={'INVITATION'} largeText={'소중한 분들을 초대합니다'} />
       <ContentText>
-        {'함께 있을 때 가장 나다운 모습이 되고'}
+        {'서로가 서로의 청춘 그 자체였던 두 사람,'}
         <br />
-        {'함께 있을 때 미래를 꿈꾸게 하는 사람을 만나'}
-        <br />
-        {'함께 맞는 열 번째 봄, 결혼합니다.'}
+        {'열 번의 사계절을 지나 부부의 연을 맺고자 합니다.'}
         <br />
         <br />
-        {'지금처럼 서로에게 가장 친한 친구가 되어'}
+        {'앞으로 함께 나아갈 수많은 계절,'}
         <br />
-        {'예쁘고 행복하게 잘 살겠습니다.'}
-        <br />
-        <br />
-        {'저희 두 사람의 새로운 시작을'}
-        <br />
-        {'함께하시어 축복해 주시면 감사하겠습니다.'}
+        {'그 시작의 자리에 귀한 걸음으로 축복해 주십시오.'}
       </ContentText>
       <FamilyNameWrapper>
         <DimmedText>{'(故)'}</DimmedText>
         <NameText>{' 강구룡 · 오진숙'}</NameText>
         <DimmedText>{' 의 아들'}</DimmedText>
-        <NameText>{' 강웅비'}</NameText>
+        <NameText>{' 웅비'}</NameText>
         <br />
         <NameText>{' 주형복 · 박선순'}</NameText>
         <DimmedText>{' 의 딸'}</DimmedText>
-        <NameText>{' 주가영'}</NameText>
+        <NameText>{' 가영'}</NameText>
       </FamilyNameWrapper>
     </Container>
   );
