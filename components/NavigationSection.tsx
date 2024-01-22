@@ -13,7 +13,7 @@ export default function NavigationSection() {
     },
     {
       app: '티맵',
-      img: '/images/ico_navermap.png',
+      img: '/images/ico_tmap.png',
       url: `https://apis.openapi.sk.com/tmap/app/routes?appKey=${process.env.NEXT_PUBLIC_TMAP_APP_KEY}&name=${encodedTitle}&lon=${lng}&lat=${lat}`,
     },
     {

@@ -31,7 +31,7 @@ function MapSection() {
     kakaoMapScript.addEventListener('load', onLoadKakaoAPI);
   }, []);
 
-  return <div id={'map'} style={{ width: '425px', height: '300px', marginTop: '35px' }} />;
+  return <div id={'map'} style={{ width: '100%', height: '300px', marginTop: '35px' }} />;
 }
 
 export default MapSection;
