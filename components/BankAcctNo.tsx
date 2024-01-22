@@ -7,7 +7,7 @@ interface Props {
 }
 
 export default function BankAcctNo({ title, contents }: Props) {
-  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse({ defaultExpanded: true });
+  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse({ defaultExpanded: false });
 
   const getArrow = (isExpanded: boolean) => {
     const imgSuffix = isExpanded ? 'top' : 'down';
