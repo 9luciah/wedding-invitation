@@ -5,12 +5,12 @@ export default function ContactSection() {
     {
       ico_suffix: '1.png',
       text: '신랑에게 연락하기',
-      phone: '01000000000',
+      phone: '01057726484',
     },
     {
       ico_suffix: '2.png',
       text: '신부에게 연락하기',
-      phone: '01000000000',
+      phone: '01068551697',
     },
   ];
 
@@ -18,17 +18,17 @@ export default function ContactSection() {
     {
       ico_suffix: '1.png',
       text: '어머니 오진숙',
-      phone: '01000000000',
+      phone: '01029376484',
     },
     {
       ico_suffix: '2.png',
       text: '아버지 주형복',
-      phone: '01000000000',
+      phone: '01065891697',
     },
     {
       ico_suffix: '2.png',
       text: '어머니 박선순',
-      phone: '01000000000',
+      phone: '01025891697',
     },
   ];
 
@@ -68,14 +68,14 @@ export default function ContactSection() {
       <ul>
         <li>
           <span className={'parentContactText'} style={{ color: '#8DB9B7' }}>
-            신랑측 혼주
+            {'신랑측 혼주\r'}
           </span>
           <span className={'parentContactText'}>{parentContactInfos[0].text}</span>
           {makeButton(parentContactInfos[0].phone, parentContactInfos[0].ico_suffix)}
         </li>
         <li>
           <span className={'parentContactText'} style={{ color: '#F79E9E' }}>
-            신부측 혼주
+            {'신부측 혼주\r'}
           </span>
           <span className={'parentContactText'}>{parentContactInfos[1].text}</span>
           {makeButton(parentContactInfos[1].phone, parentContactInfos[1].ico_suffix)}

@@ -110,9 +110,9 @@ export default function Home() {
         <div style={{ marginTop: '80px' }}>
           <PinkTitle smallText={'LOCATION'} largeText={'오시는 길'} />
           <AddressWrapper>
-            <span>더링크호텔 5층 가든홀</span>
-            <span>서울 구로구 경인로 610</span>
-            <span>Tel. 02-852-5000</span>
+            <span>{'더링크호텔 5층 가든홀'}</span>
+            <span>{'서울 구로구 경인로 610'}</span>
+            <span>{'Tel. 02-852-5000'}</span>
           </AddressWrapper>
           <MapSection />
         </div>
@@ -129,13 +129,13 @@ export default function Home() {
           <PinkTitle smallText={'ACCOUNT'} largeText={'마음 전하실 곳'} />
           <ContactSection />
         </ContactContainer>
-        <BankAcctNo title={'신랑측 계좌번호'} contents={[['농협 111', '강웅비']]} />
+        <BankAcctNo title={'신랑측 계좌번호'} contents={[['국민은행 75260104077344', '강웅비']]} />
         <BankAcctNo
           title={'신부측 계좌번호'}
           contents={[
-            ['국민은행 111', '주가영'],
-            ['농협', '주형복'],
-            ['농협', '박선순'],
+            ['국민은행 55950201394297', '주가영'],
+            ['부산은행 128120291139', '주형복'],
+            ['국민은행 86150101295614', '박선순'],
           ]}
         />
         <KaKaoTalkShareWrapper>

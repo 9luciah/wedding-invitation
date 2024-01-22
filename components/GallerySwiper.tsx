@@ -2,18 +2,40 @@ import React from 'react';
 import { styled } from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import SwiperCore, { Pagination } from 'swiper';
+import { Pagination } from 'swiper';
 
-import 'swiper/swiper.css';
-
-SwiperCore.use([Pagination]);
+import 'swiper/swiper.min.css';
+import 'swiper/swiper-bundle.css';
 
 export default function GallerySwiper() {
-  const imageUrls = ['/images/wiz1.jpeg', '/images/wiz2.jpeg', '/images/wiz3.jpeg'];
+  const imageUrls = [
+    '/images/2.jpg',
+    '/images/3.jpg',
+    '/images/4.jpg',
+    '/images/5.jpg',
+    '/images/6.jpg',
+    '/images/7.jpg',
+    '/images/8.jpg',
+    '/images/9.jpg',
+    '/images/10.jpg',
+    '/images/11.jpg',
+    '/images/12.jpg',
+    '/images/13.jpg',
+    '/images/14.jpg',
+    '/images/15.jpg',
+    '/images/16.jpg',
+    '/images/17.jpg',
+    '/images/18.jpg',
+    '/images/19.jpg',
+  ];
 
   return (
     <StyledSwiper
-      pagination={{ clickable: true, dynamicMainBullets: 3 }}
+      pagination={{
+        clickable: true,
+        dynamicBullets: true,
+        dynamicMainBullets: 3,
+      }}
       modules={[Pagination]}
       loop
     >
@@ -56,13 +78,8 @@ const StyledSwiper = styled(Swiper)`
   }
 
   .swiper-pagination {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100px;
-    background: white;
+    position: relative;
+    padding-top: 46px;
   }
 
   img {
