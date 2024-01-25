@@ -11,6 +11,8 @@ export default function GallerySwiper() {
   const imageUrls = [
     '/images/2.jpg',
     '/images/3.jpg',
+    '/images/20-3.jpeg',
+    '/images/21-4.jpeg',
     '/images/4.jpg',
     '/images/5.jpg',
     '/images/6.jpg',

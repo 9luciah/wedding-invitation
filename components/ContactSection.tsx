@@ -50,7 +50,7 @@ export default function ContactSection() {
       <div className={'text'}>
         {'참석이 어려우신 분들을 위해'}
         <br />
-        {'계좌번호를 기재하였습니다.'}
+        {'기재하였습니다.'}
         <br />
         {'너그러운 마음으로 양해 부탁드립니다.'}
       </div>
