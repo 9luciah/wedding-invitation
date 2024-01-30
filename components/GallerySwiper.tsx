@@ -10,9 +10,8 @@ import 'swiper/swiper-bundle.css';
 export default function GallerySwiper() {
   const imageUrls = [
     '/images/2.jpg',
-    '/images/3.jpg',
     '/images/20-3.jpeg',
-    '/images/21-4.jpeg',
+    '/images/3.jpg',
     '/images/4.jpg',
     '/images/5.jpg',
     '/images/6.jpg',
@@ -27,8 +26,9 @@ export default function GallerySwiper() {
     '/images/15.jpg',
     '/images/16.jpg',
     '/images/17.jpg',
-    '/images/18.jpg',
+    '/images/18.jpeg',
     '/images/19.jpg',
+    '/images/20.jpeg',
   ];
 
   return (
