@@ -28,7 +28,7 @@ export default function GallerySwiper() {
     '/images/17.jpg',
     '/images/18.jpeg',
     '/images/19.jpg',
-    '/images/20.jpeg',
+    '/images/20.jpg',
   ];
 
   return (
